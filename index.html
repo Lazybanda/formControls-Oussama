@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shopping form</title>
+  </head>
+
+  <body>
+    <main>
+      <h1 id="header">Shopping Form</h1>
+      <form>
+        <div id="personal-info">
+          <h2>Personal Information</h2>
+          <label for="first-name">First Name:</label>
+          <input
+            type="text"
+            id="first-name"
+            placeholder="First Name"
+            minlength="2"
+            pattern="[A-Za-z].*"
+            required
+          />
+
+          <label for="last-name">Last Name:</label>
+          <input
+            type="text"
+            id="last-name"
+            placeholder="Last Name"
+            minlength="2"
+            pattern="[A-Za-z].*"
+            required
+          />
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Email Address" required />
+        </div>
+
+        <div id="options">
+          <h2>Model Options</h2>
+          <label for="color">Color</label>
+          <select id="color" required>
+            <option value="" disabled selected hidden>color</option>
+            <option>Red</option>
+            <option>Blue</option>
+            <option>Green</option>
+          </select>
+
+          <label for="size">Size</label>
+          <select id="size" required>
+            <option value="" selected disabled hidden>size</option>
+            <option>XS</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>XXL</option>
+          </select>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
